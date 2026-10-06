@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - International Food Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        International Food Restaurant
+    </div>
+
+    <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="mailto:belforthamburg@gmail.com">Contact</a></li>
+    </ul>
+
+</nav>
+
+<main class="container">
+
+    <h1>Form Order</h1>
+
+    <p>Silakan isi data pemesanan di bawah ini.</p>
+
+    <form class="booking-form">
+
+        <table>
+
+            <tr>
+                <td>
+                    <label for="nama">Nama Lengkap</label>
+                </td>
+                <td>
+                    <input type="text"
+                           id="nama"
+                           name="nama"
+                           placeholder="Masukkan nama lengkap"
+                           required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="hp">No. HP</label>
+                </td>
+                <td>
+                    <input type="text"
+                           id="hp"
+                           name="hp"
+                           placeholder="Masukkan nomor HP"
+                           inputmode="numeric"
+                           pattern="[0-9]+"
+                           oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                           required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="paket">Paket Menu</label>
+                </td>
+                <td>
+                    <select id="paket" name="paket" required>
+                        <option value="">-- Pilih Menu --</option>
+                        <option value="makanan">Makanan</option>
+                        <option value="minuman">Minuman</option>
+                        <option value="dessert">Dessert</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Jumlah Item
+                </td>
+                <td>
+                    <input type="checkbox"
+                           id="pesan"
+                           name="pesan">
+
+                    <label for="pesan">Pesan Item</label>
+
+                    <br>
+
+                    <input type="number"
+                           name="jumlah_item"
+                           min="1"
+                           placeholder="Jumlah">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Pembayaran
+                </td>
+                <td>
+
+                    <input type="radio"
+                           id="kartu"
+                           name="pembayaran"
+                           value="kartu"
+                           required>
+
+                    <label for="kartu">
+                        Kartu Kredit/Debit
+                    </label>
+
+                    <br>
+
+                    <input type="radio"
+                           id="ewallet"
+                           name="pembayaran"
+                           value="ewallet">
+
+                    <label for="ewallet">
+                        Dompet Digital
+                    </label>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Jenis Kartu
+                </td>
+
+                <td>
+
+                    <input type="radio"
+                           id="visa"
+                           name="jenis_kartu"
+                           value="visa">
+
+                    <label for="visa">
+                        Visa
+                    </label>
+
+                    <input type="radio"
+                           id="mastercard"
+                           name="jenis_kartu"
+                           value="mastercard">
+
+                    <label for="mastercard">
+                        Mastercard
+                    </label>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="nomor_kartu">
+                        Nomor Kartu
+                    </label>
+                </td>
+
+                <td>
+
+                    <input type="text"
+                           id="nomor_kartu"
+                           name="nomor_kartu"
+                           placeholder="Masukkan nomor kartu"
+                           inputmode="numeric"
+                           pattern="[0-9]+"
+                           oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Dompet Digital
+                </td>
+
+                <td>
+
+                    <input type="radio"
+                           id="gopay"
+                           name="dompet"
+                           value="gopay">
+
+                    <label for="gopay">
+                        GoPay
+                    </label>
+
+                    <input type="radio"
+                           id="dana"
+                           name="dompet"
+                           value="dana">
+
+                    <label for="dana">
+                        DANA
+                    </label>
+
+                    <input type="radio"
+                           id="ovo"
+                           name="dompet"
+                           value="ovo">
+
+                    <label for="ovo">
+                        OVO
+                    </label>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+
+                <td>
+                    <button type="submit">
+                        Kirim Pesanan
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 International Food Restaurant</p>
+</footer>
+
+</body>
+</html>

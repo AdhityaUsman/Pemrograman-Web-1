@@ -266,3 +266,143 @@ footer {
         font-size: 13px;
     }
 }
+
+/* =========================
+   BOOKING
+========================= */
+
+.booking-form {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    margin-top: 25px;
+}
+
+.booking-form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.booking-form td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.booking-form td:first-child {
+    width: 30%;
+    font-weight: bold;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="tel"],
+.booking-form input[type="number"],
+.booking-form select {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.booking-form input[type="radio"],
+.booking-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.booking-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #555;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .nav-menu {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .nav-menu li {
+        margin: 0 8px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .booking-form {
+        padding: 10px;
+    }
+
+    .booking-form table,
+    .booking-form tbody,
+    .booking-form tr,
+    .booking-form td {
+        display: block;
+        width: 100%;
+    }
+
+    .booking-form td {
+        padding: 7px 0;
+    }
+
+    .booking-form td:first-child {
+        margin-top: 8px;
+    }
+
+    .booking-form input[type="text"],
+    .booking-form input[type="tel"],
+    .booking-form input[type="number"],
+    .booking-form select {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .booking-form button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.btn-registrasi {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.btn-registrasi:hover {
+    background-color: #555;
+}
